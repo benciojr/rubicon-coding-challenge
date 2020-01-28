@@ -26,20 +26,20 @@ The API should be accessible via a ReST client such as postman.
 For example:
 
 - Viewing orders (GET):
-http://localhost:8080/viewOrders?searchBy=all
-http://localhost:8080/viewOrders?searchBy=orderId&searchValue=10
-http://localhost:8080/viewOrders?searchBy=farmId&searchValue=20
-http://localhost:8080/viewOrders?searchBy=orderStatus&searchValue=REQUESTED
+        - http://localhost:8080/viewOrders?searchBy=all
+        - http://localhost:8080/viewOrders?searchBy=orderId&searchValue=10
+        - http://localhost:8080/viewOrders?searchBy=farmId&searchValue=20
+        - http://localhost:8080/viewOrders?searchBy=orderStatus&searchValue=REQUESTED
 
 - Placing an order (POST):
-http://localhost:8080/placeOrder
+        - http://localhost:8080/placeOrder
 Example request body:
-{
-    "orderId": 110,
-    "farmId": 200,
-    "duration": 60000
-}
+	{
+	    "orderId": 110,
+	    "farmId": 200,
+	    "duration": 60000
+	}
 
 - Cancelling orders (GET):
-http://localhost:8080/cancelOrder?orderId=110
+        - http://localhost:8080/cancelOrder?orderId=110
 
